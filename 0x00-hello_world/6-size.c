@@ -1,30 +1,15 @@
 #include <stdio.h>
 /**
- * main - Entry point 
+ * main - Entry point
  *
  * Return: Always 0
  */
 int main(void)
 {
-	clrscr();
-	printf("short int is %2d bytes \n", sizeof(short int));
-	printf("int is %2d bytes \n", sizeof(int));
-	printf("int * is %2d bytes \n", sizeof(int *));
-	printf("long int is %2d bytes \n", sizeof(long int));
-	printf("long int * is %2d bytes \n", sizeof(long int *));
-	printf("signed int is %2d bytes \n", sizeof(signed int));
-	printf("unsigned int is %2d bytes \n", sizeof(unsigned int));
-	printf("\n");
-	printf("float is %2d bytes \n", sizeof(float));
-	printf("float * is %2d bytes \n", sizeof(float *));
-	printf("double is %2d bytes \n", sizeof(double));
-	printf("double * is %2d bytes \n", sizeof(double *));
-	printf("long double is %2d bytes \n", sizeof(long double));
-	printf("\n");
-	printf("signed char is %2d bytes \n", sizeof(signed char));
-	printf("char is %2d bytes \n", sizeof(char));
-	printf("char * is %2d bytes \n", sizeof(char *));
-	printf("unsigned char is %2d bytes \n", sizeof(unsigned char));
-	getch();
+	printf("size of a char: %d byte(s)\n", sizeof(char));
+	printf("size of an int: %d byte(s)\n", sizeof(int));
+	printf("size of a long int: %d byte(s)\n",sizeof(long int));
+	printf("size of  long long int: %d byte(s)\n", sizeof(long long int));
+	printf("size of a float: %d byte(s)\n", sizeof(float));
 	return (0);
 }
