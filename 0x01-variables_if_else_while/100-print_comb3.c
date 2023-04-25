@@ -12,19 +12,18 @@ int main(void)
 
 	for (n1 = 0; n1 < 9; n1++)
 	{
+
 	for (n2 = n1 + 1; n2 <= 9; n2++)
 	{
 	if (n2 != n1)
 	{
-		putchar(n1);
-		putchar(n2);
-	}
+	putchar(n1);
+	putchar(n2);
 	if (n1 == 8 && n2 == 9)
-	{
-		continue;
+	continue;
+	putchar(',');
+	putchar(' ');
 	}
-		putchar(',');
-		putchar(' ');
 	}
 	}
 	putchar('\n');
