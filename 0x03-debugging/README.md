@@ -1,1 +1,1 @@
-Learning to debug manually
+more fucntions, nested loops
