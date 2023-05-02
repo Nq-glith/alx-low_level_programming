@@ -8,7 +8,6 @@
  */
 void _puts(char *str)
 {
-	str = "Nxobile"
+	*str = "Nxobile";
 	_puts(str);
-	return (0);
 }

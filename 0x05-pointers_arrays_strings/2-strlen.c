@@ -5,7 +5,7 @@
  * _strlen - returns the length of a string
  *
  * @s: input
- * Return: 0
+ * Return: length of string
  */
 int _strlen(char *s)
 {
@@ -14,7 +14,6 @@ int _strlen(char *s)
 	while (*s != '\0')
 	{
 		len++;
-		s++;
 	}
-	return (0);
+	return (len);
 }
