@@ -8,6 +8,11 @@
  */
 void _puts(char *str)
 {
-	*str = "Nxobile";
-	_puts(str);
+	int i = 0;
+
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 }
