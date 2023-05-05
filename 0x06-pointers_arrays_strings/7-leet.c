@@ -5,37 +5,26 @@
  * Only use one if statement
  * only use two loops
  * do not use switch or any ternary operation
- * @str: stores input string
- * Return: lt
+ * @t: initialized string
+ * Return: t
  */
-char *leet(char *str)
+char *leet(char *t)
 {
-	char *lt = str;
-	int c;
+	char s[] = "aeotlAEOTL";
+	char o[] = "4307143071";
+	int i = 0;
+	int j;
 
-	for (c = 0; str[c] != '\0'; c++)
+	while (*(t + i) != '\0')
 	{
-		if (str[c] == 'a' || str[c] == 'A')
+		for (j = 0; j <= 9; j++)
 		{
-			lt[c] = '4';
+			if (*(t + i) == s[j])
+			{
+				*(t + i) = o[j];
+			}
 		}
-		else if (str[c] == 'e' || str[c] == 'E')
-		{
-			lt[c] = '3';
-		}
-		else if (str[c] == 'o' || str[c] == 'O')
-		{
-			lt[c] = '0';
-		}
-		else if (str[c] == 't' || str[c] == 'T')
-		{
-			lt[c] = '7';
-		}
-		else if (str[c] == 'l' || str[c] == 'L')
-		{
-			lt[c] = '1';
-		}
+		i++;
 	}
-
-	return (lt);
+	return (t);
 }
