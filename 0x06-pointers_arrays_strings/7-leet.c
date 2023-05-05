@@ -23,7 +23,7 @@ char *leet(char *str)
 		{
 			lt[c] = '3';
 		}
-		else if (str[c] == 'o' || str[c] == '0')
+		else if (str[c] == 'o' || str[c] == 'O')
 		{
 			lt[c] = '0';
 		}
