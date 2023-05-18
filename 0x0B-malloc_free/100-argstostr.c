@@ -12,7 +12,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int i, j, k, l = 0;
+	int i = 0, j, k, l = 0;
 	char *ptr;
 
 	if (ac == 0 || av == NULL)
@@ -31,7 +31,6 @@ char *argstostr(int ac, char **av)
 	ptr = malloc(sizeof(char) * i);
 	if (ptr == NULL)
 	{
-		free(ptr);
 		return (NULL);
 	}
 	for (j = 0; j < ac; j++)
